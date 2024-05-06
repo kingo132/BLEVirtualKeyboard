@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9639A5872BE5E841009ABC46 /* MyBLEKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5862BE5E841009ABC46 /* MyBLEKeyboardApp.swift */; };
+		9639A5892BE5E841009ABC46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5882BE5E841009ABC46 /* ContentView.swift */; };
+		9639A58B2BE5E842009ABC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9639A58A2BE5E842009ABC46 /* Assets.xcassets */; };
+		9639A58E2BE5E842009ABC46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9639A58D2BE5E842009ABC46 /* Preview Assets.xcassets */; };
+		9639A5902BE5E842009ABC46 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639A58F2BE5E842009ABC46 /* Persistence.swift */; };
+		9639A5932BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5912BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodeld */; };
+		9639A5B82BE5E965009ABC46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5B72BE5E965009ABC46 /* AppDelegate.swift */; };
+		9639A5BA2BE5EEC0009ABC46 /* SerialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5B92BE5EEC0009ABC46 /* SerialManager.swift */; };
+		9639A5BF2BE5F402009ABC46 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639A5BE2BE5F402009ABC46 /* IOKit.framework */; };
+		9639A5C12BE5F409009ABC46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639A5C02BE5F409009ABC46 /* Foundation.framework */; };
+		9639A5D22BE5F588009ABC46 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5CD2BE5F588009ABC46 /* ORSSerialPacketDescriptor.m */; };
+		9639A5D32BE5F588009ABC46 /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5CE2BE5F588009ABC46 /* ORSSerialPortManager.m */; };
+		9639A5D42BE5F588009ABC46 /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5CF2BE5F588009ABC46 /* ORSSerialBuffer.m */; };
+		9639A5D52BE5F588009ABC46 /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5D02BE5F588009ABC46 /* ORSSerialPort.m */; };
+		9639A5D62BE5F588009ABC46 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639A5D12BE5F588009ABC46 /* ORSSerialRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9639A5832BE5E841009ABC46 /* MyBLEKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBLEKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9639A5862BE5E841009ABC46 /* MyBLEKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBLEKeyboardApp.swift; sourceTree = "<group>"; };
+		9639A5882BE5E841009ABC46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9639A58A2BE5E842009ABC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9639A58D2BE5E842009ABC46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9639A58F2BE5E842009ABC46 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9639A5922BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBLEKeyboard.xcdatamodel; sourceTree = "<group>"; };
+		9639A5942BE5E842009ABC46 /* MyBLEKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyBLEKeyboard.entitlements; sourceTree = "<group>"; };
+		9639A5B62BE5E92E009ABC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9639A5B72BE5E965009ABC46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9639A5B92BE5EEC0009ABC46 /* SerialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialManager.swift; sourceTree = "<group>"; };
+		9639A5BB2BE5F34B009ABC46 /* ORSSerialPort */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ORSSerialPort; sourceTree = "<group>"; };
+		9639A5BC2BE5F389009ABC46 /* MyBLEKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyBLEKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		9639A5BE2BE5F402009ABC46 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9639A5C02BE5F409009ABC46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9639A5CD2BE5F588009ABC46 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPacketDescriptor.m; path = ORSSerialPort/Sources/ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		9639A5CE2BE5F588009ABC46 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPortManager.m; path = ORSSerialPort/Sources/ORSSerialPortManager.m; sourceTree = "<group>"; };
+		9639A5CF2BE5F588009ABC46 /* ORSSerialBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORSSerialBuffer.m; path = ORSSerialPort/Sources/ORSSerialBuffer.m; sourceTree = "<group>"; };
+		9639A5D02BE5F588009ABC46 /* ORSSerialPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPort.m; path = ORSSerialPort/Sources/ORSSerialPort.m; sourceTree = "<group>"; };
+		9639A5D12BE5F588009ABC46 /* ORSSerialRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORSSerialRequest.m; path = ORSSerialPort/Sources/ORSSerialRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9639A5802BE5E841009ABC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9639A5C12BE5F409009ABC46 /* Foundation.framework in Frameworks */,
+				9639A5BF2BE5F402009ABC46 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9639A57A2BE5E841009ABC46 = {
+			isa = PBXGroup;
+			children = (
+				9639A5CF2BE5F588009ABC46 /* ORSSerialBuffer.m */,
+				9639A5CD2BE5F588009ABC46 /* ORSSerialPacketDescriptor.m */,
+				9639A5D02BE5F588009ABC46 /* ORSSerialPort.m */,
+				9639A5CE2BE5F588009ABC46 /* ORSSerialPortManager.m */,
+				9639A5D12BE5F588009ABC46 /* ORSSerialRequest.m */,
+				9639A5BC2BE5F389009ABC46 /* MyBLEKeyboard-Bridging-Header.h */,
+				9639A5BB2BE5F34B009ABC46 /* ORSSerialPort */,
+				9639A5852BE5E841009ABC46 /* MyBLEKeyboard */,
+				9639A5842BE5E841009ABC46 /* Products */,
+				9639A5BD2BE5F402009ABC46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9639A5842BE5E841009ABC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9639A5832BE5E841009ABC46 /* MyBLEKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9639A5852BE5E841009ABC46 /* MyBLEKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9639A5B62BE5E92E009ABC46 /* Info.plist */,
+				9639A5862BE5E841009ABC46 /* MyBLEKeyboardApp.swift */,
+				9639A5882BE5E841009ABC46 /* ContentView.swift */,
+				9639A58A2BE5E842009ABC46 /* Assets.xcassets */,
+				9639A58F2BE5E842009ABC46 /* Persistence.swift */,
+				9639A5942BE5E842009ABC46 /* MyBLEKeyboard.entitlements */,
+				9639A5912BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodeld */,
+				9639A58C2BE5E842009ABC46 /* Preview Content */,
+				9639A5B72BE5E965009ABC46 /* AppDelegate.swift */,
+				9639A5B92BE5EEC0009ABC46 /* SerialManager.swift */,
+			);
+			path = MyBLEKeyboard;
+			sourceTree = "<group>";
+		};
+		9639A58C2BE5E842009ABC46 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9639A58D2BE5E842009ABC46 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9639A5BD2BE5F402009ABC46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9639A5C02BE5F409009ABC46 /* Foundation.framework */,
+				9639A5BE2BE5F402009ABC46 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9639A5822BE5E841009ABC46 /* MyBLEKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9639A5AD2BE5E842009ABC46 /* Build configuration list for PBXNativeTarget "MyBLEKeyboard" */;
+			buildPhases = (
+				9639A57F2BE5E841009ABC46 /* Sources */,
+				9639A5802BE5E841009ABC46 /* Frameworks */,
+				9639A5812BE5E841009ABC46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBLEKeyboard;
+			productName = MyBLEKeyboard;
+			productReference = 9639A5832BE5E841009ABC46 /* MyBLEKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9639A57B2BE5E841009ABC46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9639A5822BE5E841009ABC46 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 9639A57E2BE5E841009ABC46 /* Build configuration list for PBXProject "MyBLEKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9639A57A2BE5E841009ABC46;
+			productRefGroup = 9639A5842BE5E841009ABC46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9639A5822BE5E841009ABC46 /* MyBLEKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9639A5812BE5E841009ABC46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9639A58E2BE5E842009ABC46 /* Preview Assets.xcassets in Resources */,
+				9639A58B2BE5E842009ABC46 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9639A57F2BE5E841009ABC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9639A5D22BE5F588009ABC46 /* ORSSerialPacketDescriptor.m in Sources */,
+				9639A5D32BE5F588009ABC46 /* ORSSerialPortManager.m in Sources */,
+				9639A5D42BE5F588009ABC46 /* ORSSerialBuffer.m in Sources */,
+				9639A5D52BE5F588009ABC46 /* ORSSerialPort.m in Sources */,
+				9639A5D62BE5F588009ABC46 /* ORSSerialRequest.m in Sources */,
+				9639A5932BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodeld in Sources */,
+				9639A5902BE5E842009ABC46 /* Persistence.swift in Sources */,
+				9639A5892BE5E841009ABC46 /* ContentView.swift in Sources */,
+				9639A5BA2BE5EEC0009ABC46 /* SerialManager.swift in Sources */,
+				9639A5B82BE5E965009ABC46 /* AppDelegate.swift in Sources */,
+				9639A5872BE5E841009ABC46 /* MyBLEKeyboardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9639A5AB2BE5E842009ABC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9639A5AC2BE5E842009ABC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9639A5AE2BE5E842009ABC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MyBLEKeyboard/MyBLEKeyboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyBLEKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = N99J53F9R6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ORSSerialPort",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = MyBLEKeyboard/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodwin.MyBLEKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/MyBLEKeyboard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9639A5AF2BE5E842009ABC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MyBLEKeyboard/MyBLEKeyboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyBLEKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = N99J53F9R6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ORSSerialPort",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = MyBLEKeyboard/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodwin.MyBLEKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/MyBLEKeyboard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9639A57E2BE5E841009ABC46 /* Build configuration list for PBXProject "MyBLEKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9639A5AB2BE5E842009ABC46 /* Debug */,
+				9639A5AC2BE5E842009ABC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9639A5AD2BE5E842009ABC46 /* Build configuration list for PBXNativeTarget "MyBLEKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9639A5AE2BE5E842009ABC46 /* Debug */,
+				9639A5AF2BE5E842009ABC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9639A5912BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9639A5922BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodel */,
+			);
+			currentVersion = 9639A5922BE5E842009ABC46 /* MyBLEKeyboard.xcdatamodel */;
+			path = MyBLEKeyboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9639A57B2BE5E841009ABC46 /* Project object */;
+}
